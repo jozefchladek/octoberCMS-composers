@@ -1,0 +1,6 @@
+plugin:
+    name: 'chladek.genres::lang.plugin.name'
+    description: 'chladek.genres::lang.plugin.description'
+    author: chladek
+    icon: oc-icon-arrows
+    homepage: ''

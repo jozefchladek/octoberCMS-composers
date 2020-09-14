@@ -1,0 +1,6 @@
+plugin:
+    name: 'chladek.composers::lang.plugin.name'
+    description: 'chladek.composers::lang.plugin.description'
+    author: chladek
+    icon: oc-icon-music
+    homepage: ''
