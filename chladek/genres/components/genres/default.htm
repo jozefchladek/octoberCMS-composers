@@ -1,0 +1,7 @@
+{% set genres = __SELF__.genres %}
+
+<select name="genre" style="padding: 0.5rem; width: 17.5rem;">
+    {% for genre in genres %}
+        <option value="{{ genre.genre }}">{{ genre.genre }}</option>
+    {% endfor %}
+</select>

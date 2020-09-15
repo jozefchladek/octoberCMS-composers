@@ -1,0 +1,12 @@
+title: Composers
+modelClass: Chladek\Composers\Models\Composer
+list: $/chladek/composers/models/composer/columns.yaml
+recordUrl: 'chladek/composers/composers/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

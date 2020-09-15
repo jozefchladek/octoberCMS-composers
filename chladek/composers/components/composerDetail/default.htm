@@ -1,0 +1,12 @@
+{% set composerDetail = __SELF__.composerDetail %}
+
+<div style="text-align: center">
+    {% for composer in composerDetail %}
+        <h1>{{ composer.name }}</h1>
+        <h4>Genre: {{ composer.genre }}</h4>
+        <h5 style="border-bottom: 1px solid black; margin-bottom: 1rem; padding-bottom: 1rem">{{ composer.born_year }} - {{ composer.death_year }}</h5>
+        <p>{{ composer.description }}</p>
+    {% endfor %}
+</div>
+
+

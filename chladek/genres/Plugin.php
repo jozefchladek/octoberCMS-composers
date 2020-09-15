@@ -6,6 +6,9 @@ class Plugin extends PluginBase
 {
     public function registerComponents()
     {
+        return [
+            'Chladek\Genres\Components\Genres' => 'genres'
+        ];
     }
 
     public function registerSettings()

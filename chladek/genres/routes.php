@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use Chladek\Genres\Models\Genres;
+use Chladek\Genres\Models\Genre;
 
 Route::get('api/genres', function () {
-    return Genres::all();
+    return Genre::all();
 });

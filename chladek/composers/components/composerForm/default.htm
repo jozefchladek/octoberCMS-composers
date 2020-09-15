@@ -1,0 +1,27 @@
+<h1 style="text-align: center">Add Composer</h1>
+
+<div style="display: flex; justify-content: center">
+    <form data-request="onSave">
+        <label>Name</label><br/>
+        <input type="text" name="name"><br/>
+
+        <label>Genre</label><br/>
+        {% component 'genres' %}<br/>
+
+        <label>Born year</label><br/>
+        <input type="number" name="born_year"><br/>
+
+        <label>Death year</label><br/>
+        <input type="number" name="death_year"><br/>
+
+        <label>Description</label><br/>
+        <textarea rows="5" cols="60" name="description"></textarea>
+            <br/>
+
+        <button type="submit">Save</button><br/>
+
+        {% flash success %}
+            <p>{{ message }}</p>
+        {% endflash %}
+    </form>
+</div>

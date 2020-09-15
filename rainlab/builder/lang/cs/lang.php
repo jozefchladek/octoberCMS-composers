@@ -390,7 +390,7 @@ return [
         'property_behavior_form_flash_delete_description' => 'Flash message to display when record is deleted.',
         'property_behavior_form_preview' => 'Preview record page',
         'behavior_list_controller' => 'Možnost listování záznamy',
-        'behavior_list_controller_description' => 'Vytvoří tabulku s řazením a vyhledávání s možností definovat odkaz na detail jednotlivého záznamu. Chování automaticky vytvoří akci kontroléru "index".',
+        'behavior_list_controller_description' => 'Vytvoří tabulku s řazením a vyhledávání s možností definovat odkaz na composerDetail jednotlivého záznamu. Chování automaticky vytvoří akci kontroléru "index".',
         'property_behavior_list_title' => 'List title',
         'property_behavior_list_title_required' => 'Please enter the list title',
         'property_behavior_list_placeholder' => '--select list--',

@@ -4,3 +4,8 @@ plugin:
     author: chladek
     icon: oc-icon-music
     homepage: ''
+navigation:
+    main-menu-item:
+        label: Composers
+        url: chladek/composers/composers
+        icon: icon-music

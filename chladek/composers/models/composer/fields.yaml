@@ -1,0 +1,28 @@
+fields:
+    name:
+        label: name
+        span: full
+        required: 1
+        type: text
+    genre:
+        label: Genre
+        options: listGenres
+        showSearch: true
+        span: full
+        required: 1
+        type: dropdown
+    born_year:
+        label: 'Born Year'
+        span: auto
+        required: 1
+        type: number
+    death_year:
+        label: 'Death Year'
+        span: auto
+        type: number
+    description:
+        label: Description
+        size: ''
+        span: full
+        required: 1
+        type: textarea

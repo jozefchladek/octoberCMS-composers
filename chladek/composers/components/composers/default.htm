@@ -1,0 +1,17 @@
+{% set composers = __SELF__.composers %}
+
+<h1 style="text-align: center">Composers</h1>
+
+
+<div class="d-flex " style="display: flex; flex-wrap: wrap; justify-content: center;">
+    {% for composer in composers %}
+        <div class="card" style="width: 18rem; margin: 2rem; padding: 1rem; border: 1px solid black">
+            <div class="card-body">
+                <h5 class="card-title">{{ composer.name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ composer.born_year }} - {{ composer.death_year }}</h6>
+                <p class="card-text">{{ composer.genre }}</p>
+                <a href="{{ ''|page }}/detail/{{ composer.id }}" class="card-link">Detail</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>

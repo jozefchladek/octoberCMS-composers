@@ -1,0 +1,4 @@
+title: Composers
+modelClass: Chladek\Composers\Models\Composer
+toolbar:
+    buttons: reorder_toolbar

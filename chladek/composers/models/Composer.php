@@ -1,6 +1,7 @@
 <?php namespace Chladek\Composers\Models;
 
 use Model;
+use Chladek\Genres\Models\Genre;
 
 /**
  * Model
@@ -8,10 +9,12 @@ use Model;
 class Composer extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
-    /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
+
+
+
+
+    /**
+     * @var bool
      */
     public $timestamps = false;
 
@@ -27,5 +30,23 @@ class Composer extends Model
     public $rules = [
     ];
 
+    /**
+     * @var string[]
+     */
     public $fillable = ['name', 'genre', 'born_year', 'death_year', 'description'];
+
+
+    /**
+     * @param string|null $fieldName
+     * @param string $value
+     * @param string $formData
+     * @return array
+     */
+    public function listGenres(?string $fieldName, string $value, string $formData)
+    {
+        $sameKeyValueArr = array_map(function ($a) {
+            return array_pop($a);
+        }, Genre::query()->get(['genre'])->toArray());
+        return array_combine($sameKeyValueArr, $sameKeyValueArr);
+    }
 }

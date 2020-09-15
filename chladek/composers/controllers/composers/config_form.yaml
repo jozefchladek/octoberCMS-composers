@@ -1,0 +1,10 @@
+name: Composers
+form: $/chladek/composers/models/composer/fields.yaml
+modelClass: Chladek\Composers\Models\Composer
+defaultRedirect: chladek/composers/composers
+create:
+    redirect: 'chladek/composers/composers/update/:id'
+    redirectClose: chladek/composers/composers
+update:
+    redirect: chladek/composers/composers
+    redirectClose: chladek/composers/composers
